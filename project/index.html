@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html>
- <link rel="stylesheet" href="./style.css">
-<title>Movie Database</title>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviePedia</title>
+    <link rel="stylesheet" href="./style.css">
     <div class="header">
     <a href="#default" class="logo">Moviepedia</a>
-   
-    <div class="nav">
+
+    <div class="nav"> 
     <a class="active" href="#home">Home</a>
     <a href="Watchlist">Watchlist</a>
     <a>Genres</a>
     </div>
-    <div class="search-container">
-    <form action="/glass.png">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+     <div class="field">
+          <input id="search" type="search" placeholder="e.g., The Godfather" />
+        </div>
     </div>
 </head>
 <body>
-
-
-
+  <!-- <section id="movies">
+      <h2>movies</h2>
+      <p id="count" role="status"></p>
+      <ul id="list" class="movie-list"></ul>
+    </section> -->
+    <div class="movie-list" id="movie-list">
+      <article class="movie-card">
+      <div class="movie-poster">
+        <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/01/persona-3-reload-tag-page-cover-art.jpg"alt="Persona 3 Reload cover art">
+      </div>
+      <div class="movie-info">
+        <h3>Interstellar</h3>
+        <p class="movie-meta">2014 · Sci-Fi</p>
+        <p class="movie-rating">⭐ 8.7</p>
+        <p>A group of astronauts travel through a wormhole in search of a new home.</p>
+          <div class="movie-actions">
+           <button type="button">Add to Watchlist</button>
+          </div>
+      </div>
+      </article>
+      <article class="movie-card">
+        <div class="movie-poster">
+          <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/01/persona-3-reload-tag-page-cover-art.jpg" alt="Persona 3 Reload cover art">
+        </div>
+        <div class="movie-info">
+          <h3>The Dark Knight</h3>
+          <p class="movie-meta">2008 · Action</p>
+          <p class="movie-rating">⭐ 9.0</p>
+          <p>Batman faces the Joker, a criminal threatening Gotham City.</p>
+          <div class="movie-actions">
+            <button type="button">Add to Watchlist</button>
+          </div>
+        </div>
+      </article>
+      </div>
+ </section>
+</body>
 </html>
